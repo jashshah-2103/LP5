@@ -1,3 +1,6 @@
+//gedit filename.cpp 
+//gcc -fopenmp filename.cpp
+//./a.out
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
