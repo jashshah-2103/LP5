@@ -1,3 +1,14 @@
+//From non cuda machine
+// ssh exam@10.10.12.68
+// password : xxxxx
+// cat >> file.cu
+// paste code
+
+// ^D
+
+// nvcc file.cu
+// ./a.out
+
 %%cu
 #include <stdio.h>
 #include <stdlib.h>
