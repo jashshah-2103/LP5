@@ -1,3 +1,7 @@
+//gedit filename.cpp 
+//gcc -fopenmp filename.cpp
+//./a.out
+
 #include <iostream>
 #include <vector>
 #include <limits.h>
