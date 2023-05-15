@@ -1,3 +1,6 @@
+// !pip install git+https://github.com/andreinechaev/nvcc4jupyter.git
+// %load_ext nvcc_plugin
+
 //From non cuda machine
 // ssh exam@10.10.12.68
 // password : xxxxx
