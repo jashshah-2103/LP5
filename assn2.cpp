@@ -45,9 +45,9 @@ void merge(int *array, int l, int m, int r)
     for (j = 0; j < n2; j++)
         R[j] = array[m + 1 + j]
 
-            // Merge the temp arrays back into array [l..r]
+     // Merge the temp arrays back into array [l..r]
 
-            i = 0;
+    i = 0;
     j = 0;
     k = l;
     while (i < n1 && j < n2)
@@ -55,7 +55,7 @@ void merge(int *array, int l, int m, int r)
         if (L[i] <= R[j])
         {
             array[k] = L[i];
-            i++
+            i++;
         }
         else
         {
@@ -88,11 +88,11 @@ void parallelMergeSort(int *array, int l, int r)
     if (l < r)
     {
         int m = l + (r - l) / 2;
-#pragma omp parallel sections {
-#pragma omp section
+        #pragma omp parallel sections {
+        #pragma omp section
         parallelMergeSort(array, l, m);
 
-#pragma omp section
+        #pragma omp section
         parallelMergeSort(array, m + 1, r);
     }
     merge(array, l, m, r);
