@@ -1,7 +1,7 @@
 //gedit filename.cpp 
 //gcc -fopenmp filename.cpp
 //./a.out
-#include "/Users/jashshah/opt/anaconda3/include/omp.h"
+#include "omp.h"
 #include <iostream>
 #include <vector>
 #include <queue>
